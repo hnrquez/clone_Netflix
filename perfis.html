@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    <title>Perfis</title>
+</head>
+<body>
+    <div class="profile">Who`s whatching?</div>
+   
+    <div class="pai">
+        <div class="filho">
+            <img src="assets/image copy.png" alt="" onclick="entrar1()" id="per1">
+            <img src="assets/image copy 2.png" alt="" onclick="entrar2()" id="per2">
+            <img src="assets/image copy 3.png" alt="" onclick="entrar3()" id="per3">
+        </div>
+    </div>
+    <script>
+        var pf1 = document.getElementById('per1')
+        var pf2 = document.getElementById('per2')
+        var pf3 = document.getElementById('per3')
+        pf1.addEventListener("click", function() {
+            // Redireciona para a URL desejada
+            window.location.href = "profile1"; 
+        });
+        pf2.addEventListener('click', function(){
+            window.location.href = 'profile2'
+        });
+        pf3.addEventListener('click', function(){
+            window.location.href = 'profile3'
+        });
+
+    </script>
+</body>
+</html>
